@@ -2,4 +2,4 @@ selenium
 requests
 datetime
 pandas
-pyodbc
+
