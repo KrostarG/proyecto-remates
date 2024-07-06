@@ -2,10 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import datetime as dt
 import pandas as pd
-import pyodbc
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
+
 
 
 #Cargo la web y el navegador que voy a simular
@@ -148,5 +147,4 @@ datos = pd.concat([coches2,df2], axis=1)
 datos = datos.fillna('null')
 
 print(datos)
-
 
