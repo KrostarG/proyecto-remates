@@ -13,6 +13,9 @@ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /et
 apt-get update
 apt-get install -y google-chrome-stable
 
+# Instalar las bibliotecas ODBC necesarias
+apt-get install -y unixodbc unixodbc-dev
+
 # Instalar ChromeDriver
 CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
 wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/${CHROME_DRIVER_VERSION}/chromedriver_linux64.zip
